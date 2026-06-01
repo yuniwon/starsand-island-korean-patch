@@ -2,12 +2,16 @@
 
 비공식 스타샌드 아일랜드 한글패치 배포 저장소입니다.
 
+This repository maintains an open-source Korean localization patcher and release workflow for Starsand Island. It focuses on platform-aware packaging, safe install/restore flows, checksum verification, and compatibility releases without distributing original game assets.
+
 ## 최신 배포본
 
-- 패치 버전: `v1.0.16`
+- 패치 버전: `v1.0.29`
 - Xbox PC 기준 확인 게임 버전: `2026.18.58.0`
 - Steam 기준 확인 buildid: `23021933`
 - 지원 플랫폼: `Steam / Xbox PC`
+- GitHub Releases 누적 다운로드: `1,270+`
+- 공개 릴리스: `27`회
 
 최신 배포 파일은 Releases 탭에서 받을 수 있습니다.
 
@@ -57,7 +61,19 @@
 - 게임의 `English` 언어 슬롯을 한글로 덮어쓰는 방식입니다.
 - Steam/Xbox 경로 자동 탐지를 지원합니다.
 - Steam/Xbox 플랫폼별 텍스트 패치 파일을 분리해 적용합니다.
+- 런처 실행 시 최신 릴리스 확인, ZIP 다운로드, SHA256 검증, 재실행 흐름을 지원합니다.
+- 원본 복원 버튼과 보조 배치 파일을 제공해 설치 실패/롤백 상황을 줄입니다.
 - 폰트는 검증된 번들을 직접 복사합니다.
+
+## 유지관리 범위
+
+이 저장소는 단순 번역 파일 배포가 아니라, 게임 업데이트 이후에도 패치를 안전하게 유지하기 위한 공개 유지관리 워크플로를 포함합니다.
+
+- Steam/Xbox PC 빌드 차이 확인 및 플랫폼별 패키징
+- 릴리스 ZIP 생성, 다운로드 검증, 복원 흐름 관리
+- 사용자 제보 기반 UI 줄넘침, 내부 키 노출, 번역 문맥 문제 수정
+- 원본 게임 에셋을 커밋하지 않는 working set 중심 운영
+- 반복 릴리스와 호환성 노트를 통한 공개 배포 관리
 
 ## 문제 제보
 
@@ -76,7 +92,9 @@
 ## 안내
 
 - 비공식 팬 패치이며 개발사/퍼블리셔와 무관합니다.
-- 게임 원본 파일 및 권리는 각 권리자에게 있습니다.
+- 게임 원본 파일, 상표, 캐릭터, 스토리, 원문 텍스트 및 기타 권리는 각 권리자에게 있습니다.
+- 이 저장소의 패처 코드, 문서, 유지관리 스크립트는 별도 명시가 없는 한 MIT 라이선스로 공개됩니다.
+- 원본 게임 파일, 추출된 원문 전체, 배포 권한이 없는 에셋은 저장소와 릴리스에 포함하지 않습니다.
 - 게임 업데이트로 번들 구조가 바뀌면 새 패치가 필요할 수 있습니다.
 - 설치 후 게임 내 언어는 반드시 `English`를 선택해야 합니다.
 - 상업적 판매 및 유료 배포를 금지합니다.
